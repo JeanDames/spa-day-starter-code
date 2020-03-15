@@ -5,6 +5,11 @@
     <title></title>
 </head>
 <body>
+
+<th:block th:if="error">
+    <h2 th:text="${error}"></h2>
+</th:block>
+
 <form method="post" action="/user/add">
     <label>Username:</label>
         <input type="text" name="username">

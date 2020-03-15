@@ -6,7 +6,9 @@
 </head>
 <body>
 
-    <h1 th:text="Welcome ${user}"></h1>
+    <h1 th:text="${'Hi, ' + username}"></h1>
+
+    <a th:href="@{/}">Click here for services</a>
 
 
 </body>
