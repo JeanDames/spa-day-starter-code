@@ -12,9 +12,9 @@
 
 <form method="post" action="/user/add">
     <label>Username:</label>
-        <input type="text" name="username">
+        <input type="text" name="username" th:value ="${username}">
     <br><label>Email:</label>
-        <input type="email" name="email"></br>
+        <input type="email" name="email" th:value="${email}"></br>
     <br><label>Password:</label>
     <input type="password" name="password"></br>
     <br><label>Verify Password:</label>
